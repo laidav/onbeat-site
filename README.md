@@ -1,46 +1,48 @@
-# Astro Starter Kit: Basics
+## Marketing material 
+- Stillik
 
-```sh
-npm create astro@latest -- --template basics
-```
+### Home Page
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Mission: 
 
-## 🚀 Project Structure
+Headline: 
+- "Capturing Complex Data, Delivering Clear Actionable Insights”
 
-Inside of your Astro project, you'll see the following folders and files:
+Subheadline:
+- "Capture accurate data, enforce your business rules, take action, and monitor your operations"
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
+What we do:
+**Capture complex data and turn it into actionable insights** – enabling smarter decisions and faster workflows.
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+**Reveal patterns and anomalies with AI and thoughtful design** – uncover what matters most.
 
-## 🧞 Commands
+**Deliver elegant digital solutions with seamless UI/UX** – turning complexity into clarity.
 
-All commands are run from the root of the project, from a terminal:
+### Case studies
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+- Avesdo (Real estate preconstruction B2B platform)
+- Realosophy (Real estate brokerage)
+- Jauntin (Insurance industry)
 
-## 👀 Want to learn more?
+### About Us?
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+---
+Minimalist (Very ‘Stillik’)
+
+“Creating calm inside complex systems.”
+
+Expanded Version (About Page)
+
+“At Stillik, we believe the best technology doesn’t add noise—it removes it.
+
+We design tailored solutions that organize complex data, surface meaningful insights, and streamline decisions—bringing clarity and control to fast-evolving businesses.”
+---
+
+What began as a one-person freelance operation has grown into a trusted team of senior engineers and designers collaborating consistently on client projects. Over the years, the team has helped businesses turn complex ideas into concrete solutions, lead UI initiatives, build full-stack solutions, and translate client visions into reality.
+
+The team has delivered solutions across B2B and B2C sectors, including finance (insurance), healthcare, and real estate.
+
+The focus remains clear: simplifying complex data, creating elegant digital experiences, and turning information into actionable insights.
+
+### Contact us
+TBD
