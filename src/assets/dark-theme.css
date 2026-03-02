@@ -5,7 +5,7 @@
 
 :root {
   --color-primary: #ff6b35;
-  --color-secondary: #79d597;
+  --color-secondary: #8dc190;
   --color-bg: #0b132b;
   --color-surface: #151a2f;
   --color-text: #f5f6fa;
@@ -104,6 +104,7 @@ section#hero h3 {
 }
 
 section#what-we-do h2 {
+  color: var(--color-primary);
   margin-top: 0;
   margin-bottom: 2rem;
   text-align: center;
