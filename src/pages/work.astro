@@ -1,0 +1,67 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+  <section id="work">
+		<div class="container">
+      {[
+        {
+          href: "https://avesdo.com/",
+          imgSrc: "/projects/Avesdo.png",
+          title: "Avesdo",
+          copy: "Avesdo is a SaaS platform tailored for new home sales. They help developers and sales agencies manage the entire sales process—from lead capture to contract management."
+        },
+        {
+          href: "https://jauntin.com/",
+          imgSrc: "/projects/Jauntin.png",
+          title: "Jauntin",
+          className: 'project-card--jauntin',
+          copy: "Jauntin unlocks new revenue channels for insurers. They help identify which insurance products are suitable for digitization and embedding into third party platforms."
+        },
+        {
+          href: "https://www.realosophy.com/",
+          imgSrc: "/projects/Realosophy.svg",
+          title: "Realosophy",
+          copy: "Realosophy is an independent, full-service real estate brokerage company. Their website provides valuable data-driven insights and analysis helping consumers make better real estate decisions."
+        },
+    ].map(({ imgSrc, copy, href, title, className }) =>
+        <div class={`project-card ${className && className}`}>
+          <div class="row">
+            <div class="project-card__logo-wrapper">
+              <a href={href} class="project-card__logo" title={title} target="_blank" rel="noopener">
+                <img src={imgSrc} />
+              </a>
+            </div>
+            <div class="project-card__copy col-12 col-md-8 flex-center py-4">
+              {copy}
+            </div>
+          </div>
+        </div>
+      )}
+		</div>
+  </section>
+</Layout>
+<style lang="scss">
+	.project-card {
+
+		&--jauntin {
+			a {
+				max-width: 175px;
+			}
+		}
+		&__logo {
+			width: 100%;
+			max-width: 200px;
+
+			img {
+				width: 100%;
+			}
+		}
+
+		&__copy {
+			white-space: pre-line;
+		}
+	}
+</style>
+
