@@ -1,23 +1,27 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Brand from '../assets/astro.svg';
 ---
 
 <Layout>
-	<div id="container">
-		<main>
-			<header>
-				<nav>
-					<a class="brand" title="Stillik Brand"><img src={Brand.src} alt="Stillik Brand" /></a>
-
-				</nav>
-			</header>
-			<section id="hero">
-				<h1>Hero</h1>
-			</section>
-			<section id="what-we-do">
-				<h1></h1>
-			</section>
-		</main>
-	</div>
+  <section id="hero">
+    <h1>Capturing Complex Data, Delivering Clear Insights</h1>
+    <h3>Enforce your business rules, act on insights, and streamline operations with confidence.</h3>
+  </section>
+  <section>
+    <h2 style="text-align:center; color:var(--color-secondary); margin-bottom:2rem;">What we do</h2>
+    <ul>
+      <li>
+        <h3>Capture complex data and turn it into actionable insights</h3>
+        <p>With dynamic forms powered by resilient infrastructure, managing multiple business entities for smarter, faster decisions.</p>
+      </li>
+      <li>
+        <h3>Reveal patterns and anomalies with AI and thoughtful design</h3>
+        <p>Uncover what matters most.</p>
+      </li>
+      <li>
+        <h3>Deliver elegant digital solutions with seamless UI/UX</h3>
+        <p>Turning complexity into clarity.</p>
+      </li>
+    </ul>
+  </section>
 </Layout>
