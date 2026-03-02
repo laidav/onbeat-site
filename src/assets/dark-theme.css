@@ -76,18 +76,67 @@ header nav ul li a:focus {
   height: 2.5rem;
 }
 
+.container {
+  width: 100%;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
 main {
-  max-width: 900px;
   margin: 2rem auto;
-  padding: 2rem;
-  background: var(--color-surface);
+  padding: 2rem 0;
   border-radius: 1.2rem;
   box-shadow: 0 4px 24px 0 rgba(11, 19, 43, 0.12);
+}
+
+section {
+  padding: 2rem 0;
 }
 
 section#hero {
   text-align: center;
   margin-bottom: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  #hero {
+    min-height: 40vh;
+  }
 }
 
 section#hero h1 {
@@ -103,6 +152,10 @@ section#hero h3 {
   margin-top: 0;
 }
 
+section#what-we-do {
+  background-color: var(--color-surface);
+}
+
 section#what-we-do h2 {
   color: var(--color-primary);
   margin-top: 0;
@@ -114,7 +167,6 @@ section ul {
   list-style: none;
   padding: 0;
   display: flex;
-  flex-wrap: wrap;
   gap: 2rem;
   justify-content: center;
 }
