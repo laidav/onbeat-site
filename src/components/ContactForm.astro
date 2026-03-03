@@ -13,5 +13,22 @@
         <label for="message">Message <span class="required-asterisk">*</span></label>
         <textarea id="message" name="message" required autocomplete="off"></textarea>
     </div>
-    <button type="submit">Submit</button>
+    <button type="submit" disabled>Submit</button>
 </form>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const form = document.querySelector(".contact-form");
+    const submitButton = form?.querySelector('button[type="submit"]');
+
+    const updateButtonState = () => {
+      submitButton.disabled = !form?.checkValidity();
+    };
+
+    // Disable initially
+    updateButtonState();
+
+    // Listen for input changes
+    form.addEventListener("input", updateButtonState);
+    form.addEventListener("change", updateButtonState);
+  });
+</script>
