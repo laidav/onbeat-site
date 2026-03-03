@@ -9,5 +9,5 @@
   <circle cx="60" cy="50" r="4" fill="white"/>
   
   <!-- Text -->
-  <text x="100" y="60" font-family="Montserrat, sans-serif" font-size="36" fill="#2c3e50" font-weight="bold">STILLIK</text>
+  <text x="100" y="60" font-family="Montserrat, sans-serif" font-size="36" fill="#2c3e50" font-weight="bold">OnBeat</text>
 </svg>
