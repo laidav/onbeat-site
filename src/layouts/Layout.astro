@@ -1,5 +1,6 @@
 ---
 import Brand from '../assets/astro.svg';
+import Metronome from '../components/Metronome.astro';
 const year = new Date().getFullYear();
 ---
 
@@ -12,12 +13,13 @@ const year = new Date().getFullYear();
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="generator" content={Astro.generator} />
-		<title>OnBeat</title>
+		<title>OnBeat Solutions</title>
 		<link rel="stylesheet" href="/src/assets/dark-theme.css" />
 	</head>
 	<body>
 		<header>
 			<nav>
+				<Metronome />
 				<a class="brand" title="OnBeat Brand" href="/">
 					<img src={Brand.src} alt="OnBeat Brand" />
 				</a>
