@@ -67,7 +67,7 @@ header nav ul li a {
 
 header nav ul li a:hover,
 header nav ul li a:focus {
-  background: var(--color-primary);
+  background: var(--color-secondary);
   color: #fff;
   outline: none;
 }
@@ -146,11 +146,13 @@ section#hero {
   }
 }
 
-section#hero h1 {
+h1 {
+  text-align: center;
   color: var(--color-primary);
   font-weight: 600;
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
+  margin-top: 0;
 }
 
 section#hero h3 {

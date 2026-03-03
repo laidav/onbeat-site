@@ -4,6 +4,7 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout>
   <section id="work">
+    <h1>Clients</h1>
 		<div class="container">
       {[
         {
@@ -24,7 +25,7 @@ import Layout from '../layouts/Layout.astro';
           title: "Avesdo",
           copy: <p>Avesdo is a SaaS platform tailored for new home sales. They help developers and sales agencies manage the entire sales process—from lead capture to contract management.</p>
                 <p>
-                  We led and collaborated on multiple UI initiatives across several SaaS products. We modernized legacy systems and built scalable architecture to manage complex, data-heavy workflows from lead capture to contract management.
+                  We led and collaborated on multiple UI initiatives across several SaaS products. We modernized legacy systems and built scalable architecture to manage complex and data-heavy workflows.
                 </p>
         },
         {
@@ -34,7 +35,7 @@ import Layout from '../layouts/Layout.astro';
           copy: 
           <p>Realosophy is an independent, full-service real estate brokerage company. Their website provides valuable data-driven insights and analysis helping consumers make better real estate decisions.</p>
           <p>
-            We built full-stack solutions that transformed complex real estate data into interactive, map-driven research tools. We also developed internal systems and third-party integrations to streamline operations and support sales growth.
+            We built software solutions that transformed complex real estate data into interactive, map-driven research tools. We also developed internal systems and third-party integrations to streamline operations and support sales growth.
           </p>        },
     ].map(({ imgSrc, copy, href, title, className }) =>
         <div class={`project-card ${className && className}`}>
@@ -60,7 +61,7 @@ import Layout from '../layouts/Layout.astro';
     padding: 2rem 1.5rem;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin-bottom: 1rem;
+    margin-top: 2rem;
 
     &:hover {
       transform: translateY(-4px);
