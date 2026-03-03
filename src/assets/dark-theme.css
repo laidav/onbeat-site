@@ -1,22 +1,38 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap");
+
 :root {
   /* Import Montserrat from Google Fonts */
 }
 
 :root {
-  --color-primary: #ff6b35;
-  --color-secondary: #8dc190;
+  --color-primary: #3f8efc;
+  --color-secondary: #e6c77a;
+  --color-primary: #7c4dff;
+  --color-secondary: #b87333;
+  --color-primary: #38bdf8;
+  --color-secondary: #c9a227;
+  --color-primary: #2dd4bf;
+  --color-secondary: #f59e0b;
+  /* --color-primary: #5c6ac4;
+  --color-secondary: #ffd700;
+  --color-primary: #ff4c60;
+  --color-secondary: #facc15;
+  --color-primary: #ff4d8d;
+  --color-secondary: #c6a75e; */
   --color-bg: #0b132b;
   --color-surface: #2c2c2c;
   --color-text: #f5f6fa;
   --color-muted: #a3a9c9;
+  --font-main: "Sora", sans-serif;
 }
 
 html,
 body {
   background: var(--color-bg);
+  font-family: var(--font-main);
   color: var(--color-text);
-  font-family: "Montserrat", "Segoe UI", Arial, sans-serif;
   margin: 0;
   padding: 0;
   min-height: 100vh;
