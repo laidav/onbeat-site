@@ -34,7 +34,7 @@ const year = new Date().getFullYear();
 		<footer>
 			<div style="display: flex; align-items: center; gap: 1rem;">
 				<img src={Brand.src} alt="OnBeat Brand" />
-				<span>&copy; {year}</span>
+				<span class="year">&copy; {year}</span>
 			</div>
 			<div>
 				<a class="nav-link" href="mailto:info@onbeatsolutions.com">
@@ -44,5 +44,10 @@ const year = new Date().getFullYear();
 		</footer>
 	</body>
 </html>
+<style lang="scss">
+	.year {
+		color: var(--color-muted);
+	}
+</style>
 
 

@@ -1,4 +1,5 @@
 ---
+import ContactForm from '../components/ContactForm.astro';
 import Layout from '../layouts/Layout.astro';
 ---
 
@@ -26,6 +27,50 @@ import Layout from '../layouts/Layout.astro';
 					<p>Turning complexity into clarity.</p>
 				</li>
 			</ul>
-	</div>
+	  </div>
   </section>
+	<section class="contact-us">
+		<div class="container">
+			<div class="row">
+				<div class="contact-us__copy">
+					<h3>Get in touch</h3>
+				</div>
+				<div class="contact-us__form">
+					<ContactForm />
+				</div>
+			</div>
+		</div>
+
+	</section>
 </Layout>
+
+<style lang="scss">
+	.contact-us {
+		&__copy {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			h3 {
+				text-align: center;
+				color: var(--color-primary);
+				font-weight: 500;
+				font-size: 48px;
+			}
+		}
+
+		.row {
+			flex-direction: column;
+
+			@media  screen and (min-width:768px) {
+				flex-direction: row;
+			}
+		}
+
+		&__copy, &__form {
+			flex-grow: 1;
+		}
+
+	}
+
+</style>
