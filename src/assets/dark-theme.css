@@ -60,6 +60,13 @@
 .contact-form button[type="submit"]:hover {
   background: #ff8c5a;
 }
+
+.required-asterisk {
+  color: var(--color-primary);
+  font-weight: bold;
+  margin-left: 0.2em;
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
 :root {
   /* Import Montserrat from Google Fonts */
