@@ -1,0 +1,12 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout>
+  <form action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="da30817e-8ee7-4f00-8717-6b4ab0bfab08">
+    <input type="text" name="name" required>
+    <input type="email" name="email" required>
+    <textarea name="message" required></textarea>
+    <button type="submit">Submit</button>
+</form>
+</Layout>
