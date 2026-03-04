@@ -83,7 +83,7 @@ header nav ul li a {
 header nav ul li a:hover,
 header nav ul li a:focus {
   background: var(--color-secondary);
-  color: #fff;
+  color: var(--color-bg);
   outline: none;
 }
 
