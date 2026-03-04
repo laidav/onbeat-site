@@ -189,7 +189,7 @@ section#what-we-do h2 {
   text-align: center;
 }
 
-section ul {
+section div > ul {
   list-style: none;
   padding: 0;
   display: flex;
@@ -197,7 +197,8 @@ section ul {
   justify-content: center;
 }
 
-section ul li {
+section div > ul > li {
+  width: 100%;
   background: var(--color-bg);
   border: 1px solid var(--color-surface);
   border-radius: var(--border-radius);
@@ -210,19 +211,23 @@ section ul li {
     box-shadow 0.2s;
 }
 
-section ul li:hover {
+section div > ul > li:hover {
   border: 1.5px solid var(--color-primary);
   box-shadow: 0 4px 16px 0 rgba(255, 107, 53, 0.1);
 }
 
-section ul li h3 {
+section div > ul > li h3 {
   color: var(--color-secondary);
   font-weight: 600;
   margin-top: 0;
 }
 
-section ul li p {
+section div > ul > li p {
   color: var(--color-text);
+}
+
+section div > ul > li li {
+  margin-bottom: 1rem;
 }
 
 footer {
@@ -291,7 +296,8 @@ footer .nav-link:hover {
   margin-bottom: 0.25rem;
 }
 
-.contact-form input {
+.contact-form input,
+.contact-form textarea {
   background: #181f3a;
   color: var(--color-text);
   border: 1px solid var(--color-muted);
