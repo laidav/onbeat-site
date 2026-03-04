@@ -309,7 +309,7 @@ footer .nav-link:hover {
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-  border-color: var(--color-primary);
+  border-color: var(--color-secondary);
   outline: none;
 }
 
