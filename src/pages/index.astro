@@ -7,15 +7,18 @@ import Layout from '../layouts/Layout.astro';
   <section id="hero">
 		<div class="container">
 			<h1>Sync with your data. Amplify your insights.</h1>
-			<h3>Streamlined operations. AI-driven insights. Aligned with your goals.</h3>
+			<h3>Streamline operations. Drive insights with AI. Unlock new opportunities.</h3>
 		</div>
   </section>
   <section id="what-we-do">
 		<div class="container">
-			<h2>What we do</h2>
+			<h2 class="what-we-do__heading">What we do</h2>
+			<div class="what-we-do__copy">
+				<p>We become a trusted digital systems provider for organizations with complex operations and growth opportunities. From internal tools to customer-facing platforms, we design and build structured systems that streamline workflows, unlock insights, and create new revenue potential.</p>
+			</div>
 			<ul class="row">
 				<li>
-					<h3>Build scalable data foundations</h3>
+					<h3>Scalable data foundations</h3>
 					<ul>
 						<li>Resilient backend infrastructure</li>
 						<li>Complex entity modeling</li>
@@ -60,6 +63,27 @@ import Layout from '../layouts/Layout.astro';
 </Layout>
 
 <style lang="scss">
+	.what-we-do {
+		&__heading {
+			text-align: center;
+			margin-bottom: 1rem;
+			color: var(--color-secondary);
+		}
+
+		&__copy {
+			display: flex;
+			width: 100%;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			margin-bottom: 2rem;
+
+			p {
+				max-width: 865px;
+			}
+		}
+	}
 	.contact-us {
 		&__copy {
 			display: flex;

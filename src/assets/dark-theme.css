@@ -16,7 +16,7 @@
   --color-primary: #ff4d8d;
   --color-secondary: #c6a75e; */
   --color-primary: #ff4c60;
-  --color-secondary: #facc15;
+  --color-secondary: #d2bb5f;
   --color-bg: #0b132b;
   --color-surface: #2c2c2c;
   --color-text: #f5f6fa;
@@ -182,19 +182,13 @@ section#what-we-do {
   background-color: var(--color-surface);
 }
 
-section#what-we-do h2 {
-  color: var(--color-text);
-  margin-top: 0;
-  margin-bottom: 2rem;
-  text-align: center;
-}
-
 section div > ul {
   list-style: none;
   padding: 0;
   display: flex;
   gap: 2rem;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 section div > ul > li {
@@ -204,7 +198,8 @@ section div > ul > li {
   border-radius: var(--border-radius);
   padding: 1.5rem 1.2rem;
   min-width: 260px;
-  max-width: 320px;
+  max-width: 413px;
+  flex: 1;
   box-shadow: 0 2px 8px 0 rgba(11, 19, 43, 0.1);
   transition:
     border 0.2s,
@@ -352,4 +347,8 @@ button {
   color: var(--color-primary);
   font-weight: bold;
   margin-left: 0.2em;
+}
+
+p {
+  line-height: 1.75;
 }
