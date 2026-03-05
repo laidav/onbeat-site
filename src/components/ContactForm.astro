@@ -1,6 +1,7 @@
 <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
     <input type="hidden" name="access_key" value={import.meta.env.W3FORMSKEY}>
     <input type="hidden" name="redirect" value={import.meta.env.PUBLIC_REDIRECT_URL}>
+    <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
     <div class="form-group">
         <label for="name">Name <span class="required-asterisk">*</span></label>
         <input type="text" id="name" name="name" required autocomplete="name">
@@ -38,3 +39,16 @@
     box-sizing: border-box;
   }
 </style>
+<!-- Recaptcha v3 -->
+
+<script src={`https://www.google.com/recaptcha/api.js?render=${import.meta.env.GOOGLE_RECAPTCHA_KEY}`}></script>
+<script>
+    grecaptcha.ready(function () {
+        grecaptcha.execute(import.meta.env.GOOGLE_RECAPTCHA_KEY, {
+                action: 'contact'
+            })
+            .then(function (token) {
+                recaptchaResponse.value = token;
+            });
+    });
+</script>
